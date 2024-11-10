@@ -1,0 +1,112 @@
+
+.popular_title_blog{
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+  /* End header *************************/
+  
+    /* blog details *************************/
+    .card_cont_blog{
+      background-color: #EAEAEA;
+      border: none;
+      border-radius: 15px;
+      padding-bottom:2vh ;
+      max-height: 400px; /* Set a max height */
+      display: flex;
+      flex-direction: column;
+    }
+    
+  
+  .title_blog{
+      font-size: 40px;
+      font-weight: 700;
+      /* line-height: 74px; */
+  }
+
+    .cont_info_blog{
+      display: flex;
+      justify-content: space-between;
+    }
+    .img_col_blogs {
+      height:200px;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+    }
+    
+    .img_blog {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      border-radius: 15px;
+    }
+    .add_btn{
+      background-color: #833988;
+      border: none;
+      border-radius: 20px;
+      margin-right: 5vh;
+      padding-bottom:10px;
+      margin-top: 4vh;
+  }
+
+    .blog_title{
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 37px;
+    }
+    .desc_blog{
+      font-size: 15px;
+      font-weight: 400;
+      padding: 0 2vh 2vh 2vh;
+      max-height: calc(1.2em * 4);
+      overflow: hidden;
+      text-overflow: ellipsis; 
+      white-space: pre-line;
+    }
+
+    .categ_lastblog_cont{
+      display: flex;
+      margin: 2vh;
+    }
+    .img_last_blog{
+      height: 90px;
+      width: 90px;
+      border-radius: 15px;
+    }
+    .desc_last_blog{
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 29px;
+      padding-right: 1vh;
+    }
+    .desc_last_blog:hover{
+      color: #F57D20;
+      transition: color 0.3s ease-in-out;
+    }
+      /* End catigories************* */
+  
+  .tags_btn_cont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  }
+  
+  /* add blogs */
+ 
+  .blogdetails_img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
+  @media screen and (max-width: 992px) {
+ 
+      .card_cont_blog {
+        max-height: 500px; 
+      }
+    }
+    
+  

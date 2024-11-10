@@ -1,0 +1,121 @@
+/* CARD***************** */
+.card_services{
+    margin: 3vh 3vh 5vh 3vh;
+    height: 600px;
+    /* overflow: hidden; */
+    transition: all 0.8s ease-out 0s;
+}
+
+.card_services:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: none;
+    transform: scale(1.02);
+}
+.text_services_card{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(102 102 102 );
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+    display: -webkit-box; /* Flexbox model */
+    -webkit-line-clamp: 8; /* Number of lines to show */
+    -webkit-box-orient: vertical; /* Vertical orientation */
+    max-height: 12.2em; /* Maximum height based on line-height and line-clamp */
+}
+.cont_img_services_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.img_services_card{
+    height: 300px;
+    width: 40%;
+    object-fit: contain;
+}
+/* card_how_work************ */
+.card_how_work {
+    margin: 3vh 3vh 5vh 3vh;
+    height: 400px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden;    
+     position: relative; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: box-shadow 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.card_how_work::-webkit-scrollbar {
+    width: 3px; /* Width of the scrollbar */
+  }
+  
+  .card_how_work::-webkit-scrollbar-thumb {
+    background-color: #fff; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+.card_how_work::before {
+    content: "";
+    position: absolute;
+    top: -150%;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(194, 194, 194, 0.2); 
+    transition: top 0.5s ease-in-out;
+    z-index: 0; 
+}
+
+.card_how_work:hover::before {
+    top: 0;
+}
+
+.img_card_how_work{
+    height: 170px;
+    width: 65%;
+    object-fit: cover;
+    /* border-radius:55px; */
+}
+.text_how_work_card{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(102 102 102 );
+    font-family: Poppins, sans-serif ;
+    
+}
+/* industry */
+.col_industry_services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 2vh;
+}
+.cont_industry_services{
+    background-color: rgb(240 246 251);
+height: 130px;
+width: 130px;
+border-radius: 80px;
+border: solid 1px rgba(194, 194, 194, 0.2);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.img_industry_services{
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+@media screen and (max-width: 768px){
+    .img_services_card{
+        width: 100%;
+    } 
+    .card_services{
+        height: auto;
+    }
+    .card_how_work{
+        height: auto;
+    } 
+}
+  
+  

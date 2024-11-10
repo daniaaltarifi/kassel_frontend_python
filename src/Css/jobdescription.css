@@ -1,0 +1,32 @@
+.title_jobdescr {
+  color: #365486;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 2vh;
+}
+.get_phone_num_form {
+  background: #365486;
+  border-radius: 28px;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  margin-bottom: 2vh;
+  font-weight: bold;
+}
+.get_phone_num_form:hover{
+    background: #fff;
+    border: #365486 solid 1px;
+    color: #365486;
+}
+.labels_form_whats{
+    font-weight: bold;
+    color: #365486;
+    font-size: 16px;
+}
+.instruction_whatsapp_form{
+  color: #365486;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 6vh;
+  margin-bottom: 2vh;
+}

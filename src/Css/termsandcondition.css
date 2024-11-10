@@ -1,0 +1,34 @@
+.terms_img{
+    height: 70%;
+    width: 100%;
+object-fit: contain;
+}
+.col_interprition_terms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.title_terms{
+    font-weight: 700;
+    line-height: 2;
+    color: rgb(60 102 171 );
+    font-size: 35px;
+
+}
+.descr_terms{
+    font-size: 18px;
+    color: rgb(102 102 102 )
+}
+.affiliate_terms{
+    font-size: 20px;
+    font-weight: 700;
+color: #000;
+margin-top: 1.75rem;
+
+}
+.affiliate_descr{
+    font-size: 18px;
+    color: rgb(102 102 102);
+ 
+}

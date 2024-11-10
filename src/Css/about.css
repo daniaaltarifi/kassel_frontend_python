@@ -1,0 +1,459 @@
+/* Home Section Start */
+.home{
+  width: 100%;
+  height: 75vh;
+  background-color: rgb(240, 246, 251);
+}
+.home .content{
+  text-align: center;
+  padding-top: 200px;
+}
+.home .content h5{
+  color: rgb(60 102 171);
+  font-size: 23px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+  color: black;
+  font-size: 55px;
+  font-weight:700;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+}
+.changecontent::after{
+  content: ' ';
+  color: #ffa500;
+  text-shadow: 0px 1px 1px black;
+  animation: changetext 10s infinite linear;
+}
+
+.home .content p{
+  color: rgb(102 102 102);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 30px;
+
+}
+.home .content a{
+  padding: 10px;
+  background: white;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 550;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.home .content a:hover{
+  background: #ffa500;
+  color: white;
+}
+
+/* Scattered Icons */
+.scattered-icons {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.scattered-icons i {
+  position: absolute;
+  font-size: 35px;
+  color: rgb(102 102 102);
+  animation: float 5s ease-in-out infinite;
+}
+/* Random positions for each icon */
+.scattered-icons i:nth-child(1) { top: 11%; left: 15%; }
+.scattered-icons i:nth-child(2) { top: 3%; right: 20%; }
+.scattered-icons i:nth-child(3) { top: 4%; left: 25%; }
+.scattered-icons i:nth-child(4) { bottom: 552%; right: 830%; }
+.scattered-icons i:nth-child(5) { top: 1%; left: 62%; }
+
+/* Floating effect for icons */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@media (max-width:850px){
+  .home{
+      background-position: 50%;
+  }
+    /* Random positions for each icon */
+    .scattered-icons i:nth-child(1) { top: 1%; left: 18%; }
+    .scattered-icons i:nth-child(2) { bottom: 3%; right: 0%; }
+    .scattered-icons i:nth-child(3) { top: 5%; left: 2%; }
+    .scattered-icons i:nth-child(4) { bottom: 2%; right: 31%; }
+    .scattered-icons i:nth-child(5) { top: 1%; left: 2%; }
+    }
+@media (max-width:450px){
+  .home .content h5{
+      font-size: 25px;
+  }
+  .home .content h1{
+      font-size: 38px;
+  }
+  .home .content p{
+      font-size: 13px;
+  }
+  /* Random positions for each icon */
+.scattered-icons i:nth-child(1) { top: 1%; left: 18%; }
+.scattered-icons i:nth-child(2) { bottom: 3%; right: 0%; }
+.scattered-icons i:nth-child(3) { top: 5%; left: 2%; }
+.scattered-icons i:nth-child(4) { bottom: 2%; right: 31%; }
+.scattered-icons i:nth-child(5) { top: 1%; left: 2%; }
+}
+/* Home Section End */
+
+
+
+
+/* About Start */
+/* About Section Start */
+.about {
+  padding: 50px;
+  margin-top: 50px;
+  color: rgb(102 102 102);
+}
+
+#about .card {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-left: 10%;
+  border: none;
+}
+
+.about .icon-check{
+font-size: 210%;
+  color: #439b29;
+}
+
+.about .card img {
+  position: absolute;
+  border-radius: 10px;
+  width: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Position images in different corners */
+.about .card .img1 {
+  top:   55%;
+  right: 55%;
+  z-index: 4;
+  width: 55%;
+  height: 60%;
+}
+
+.about .card .img2 {
+  bottom: 90%;
+  right: 0;
+  z-index: 3;
+  width: 20%;
+  height: 30%;
+  box-shadow: 14.562px 10.58px 48px 0 rgba(0,0,0,.08);
+}
+
+.about .card .img3 {
+  bottom: 3%;
+  right: 5%;
+  z-index: 2;
+  width: 90%;
+  height: 100%;
+}
+
+.about .card .img4 {
+  bottom: 90%;
+  left:0;
+  z-index: 2;
+  width: 20%;
+  height: 30%;
+}
+
+/* Image hover effect */
+.about .card img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.about h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+ 
+  color: black;
+  
+ 
+}
+
+.about h3 {
+  font-weight: 500;
+ 
+  color: rgb(60 102 171);
+  font-size: 23px;
+}
+
+#about-btn {
+  width: 25%;
+  height: 64%;
+  border: none;
+  border-radius: 15px;
+  background: rgb(60 102 171);
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s ease;
+  cursor: pointer;
+  padding: 2%;
+  margin-top: 10%;
+}
+
+#about-btn:hover {
+  width: 170px;
+}
+
+@media (max-width: 765px) {
+  .about {
+    padding: 0;
+  }
+  #about-btn {
+    width: 50%;
+    margin-top: 20%;
+    margin-bottom: 30%;
+  }.about .card .img2{
+    display: none;
+  }
+  .about .card .img4{
+    display: none;
+  }
+}
+/* About Section End */
+      
+/* About End */
+/* Team Section */
+
+#team{
+  
+  margin-top: 100px;
+}
+#team .card{
+
+ 
+  margin: 3vh auto;
+  overflow: hidden;
+  position: relative;
+
+  box-shadow: 14.562px 10.58px 48px 0 rgba(0, 0, 0, .06);
+  border-top: 4px solid #3a5d99;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(255 255 255);
+ width: 100%;
+ height: 90%;
+   transition: box-shadow 0.5s ease-in-out, border 0.5s ease-in-out;
+ padding: 10%;
+}
+#team .card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3a5d99; /* Light overlay color */
+  transition: top 0.5s ease-in-out;
+  z-index: 0; /* Behind content */
+ 
+}
+
+
+
+#team .card:hover::before {
+  top: 0;
+ 
+}
+
+#team .card h1, 
+#team .card h2, 
+#team .card h3 {
+  z-index: 1; /* Ensure headings are above the overlay */
+  position: relative;
+  transition: color 0.5s ease-in-out;
+}
+.nameofteam_about{
+  font-size: 25px;
+  font-weight: 700;
+  color: #000
+}
+/* Change h1, h2, h3 color on hover */
+#team .card:hover h1, 
+#team .card:hover h2, 
+#team .card:hover h3 {
+  color: white; /* No need for !important if z-index is properly set */
+}
+
+
+
+/* Hover effect: Slightly increase box shadow */
+#team .card:hover  {
+  color: #fff;
+
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 10px 40px 0px;
+  transform: translateY(-5px); /* Slight lift on hover */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+#team .card:hover::before {
+  top: 0; /* Animate overlay down on hover */
+  color: #fff;
+}
+
+
+.duration-500 {
+  transition-duration: .5s;
+}
+#team .container .main-txt{
+  opacity: 1; 
+  font-size: 17px;
+  margin-bottom: 10px;
+  text-align: center;
+ 
+ 
+}
+
+#team .container h1{
+  font-weight: bold;
+  font-size: 33px;
+  color: rgb(20, 20, 20);
+
+}
+
+#team .container p{
+  margin-bottom: 1rem;
+  font-size: 18px;
+  color: rgb(102 102 102);
+  font-weight: 400;
+
+}
+#team .container .main-txt-titel h3{
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(60 102 171);
+}
+
+#service .container .main-txt-titel h1 {
+  font-weight: bold;
+  font-size: 33px;
+}
+
+#service .container .main-txt {
+  opacity: 1;
+  font-size: 17px;
+  margin-bottom: 10px;
+  text-align: center;
+  transform: none;
+}
+#team .container h3{
+  color: rgb(102 102 102);
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+#team .container h2{
+  color: #3a5d99;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+#team .card .card-body{
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+
+#team .card .card-body{
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+@media (max-width: 768px) {
+  #team .card {
+    width: 70%; /* Adjust width for smaller screens */
+    padding: 15%; /* Reduce padding for smaller screens */
+    margin: 3vh auto; /* Center the card horizontally */
+  }
+}
+
+/* For mobile devices (up to 576px) */
+@media (max-width: 576px) {
+  #team .card {
+    width: 90%; /* Further adjust width for mobile screens */
+    padding: 10%; /* Further reduce padding for mobile screens */
+    margin: 3vh auto; /* Center the card horizontally */
+  }
+}
+/* Section team End */
+
+
+
+/* Section Services Start */
+#service{
+  
+    margin-top: 100px;
+  }
+  #service .card{
+    /* box-shadow: rgba(0,0,0,0.1) 0px 4px 12px; */
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(251 251 251);
+   
+  }
+
+  #service .container .main-txt{
+    opacity: 1; 
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: center;
+    transform: none;
+  }
+  #service  .container h3{
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(60 102 171);
+ 
+  }
+  #service .container h1{
+    font-weight: bold;
+    font-size: 33px;
+   
+ 
+  }
+ 
+  #service .container p{
+    margin-bottom: 1rem;
+    font-size: 18px;
+    color: rgb(102 102 102);
+    font-weight: 400;
+  
+  }
+
+  #service .card i{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(60 102 171);
+    margin-top: 20px;
+}
+  #service .card .card-body h3{
+  
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  #service .card .card-body{
+    text-align: center;
+  }
+  /* Section Services End */
